@@ -200,9 +200,65 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Code Review
+      </label>
+    
     <a href="./" title="Code Review" class="md-nav__link md-nav__link--active">
       Code Review
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-publication-code-review" title="Pre-publication Code Review" class="md-nav__link">
+    Pre-publication Code Review
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#review-requirements" title="Review Requirements" class="md-nav__link">
+    Review Requirements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-release" title="Public Release" class="md-nav__link">
+    Public Release
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peer-code-review" title="Peer Code Review" class="md-nav__link">
+    Peer Code Review
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -225,8 +281,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../fc-training/" title="Fc training" class="md-nav__link">
-      Fc training
+    <a href="../git/" title="Git and GitHub" class="md-nav__link">
+      Git and GitHub
     </a>
   </li>
 
@@ -237,8 +293,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../github/" title="GitHub" class="md-nav__link">
-      GitHub
+    <a href="../quick-start/" title="New Hire Onboarding Guide" class="md-nav__link">
+      New Hire Onboarding Guide
     </a>
   </li>
 
@@ -249,44 +305,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../quick-start/" title="DIME New Hire Onboarding Guide" class="md-nav__link">
-      DIME New Hire Onboarding Guide
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../ra-training/" title="RA Training" class="md-nav__link">
-      RA Training
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../repos/" title="Our GitHub Repositories" class="md-nav__link">
-      Our GitHub Repositories
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../resources/" title="External Resources" class="md-nav__link">
-      External Resources
+    <a href="../resources/" title="Useful Resources" class="md-nav__link">
+      Useful Resources
     </a>
   </li>
 
@@ -299,6 +319,18 @@
   <li class="md-nav__item">
     <a href="../software/" title="Software" class="md-nav__link">
       Software
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../training/" title="Training" class="md-nav__link">
+      Training
     </a>
   </li>
 
@@ -320,6 +352,49 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-publication-code-review" title="Pre-publication Code Review" class="md-nav__link">
+    Pre-publication Code Review
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#review-requirements" title="Review Requirements" class="md-nav__link">
+    Review Requirements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-release" title="Public Release" class="md-nav__link">
+    Public Release
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peer-code-review" title="Peer Code Review" class="md-nav__link">
+    Peer Code Review
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -332,7 +407,7 @@
                 
                 
                 <h1 id="code-review">Code Review</h1>
-<p><strong>Pre-publication Code Review</strong></p>
+<h2 id="pre-publication-code-review">Pre-publication Code Review</h2>
 <p>When you submit a working paper for internal review, DIME Analytics will support review and release of the reproduction data and code via the <a href="https://github.com/worldbank">World Bank GitHub</a>. The goal is to ensure that working papers by DIME are fully reproducible. To complete this review, please submit the following to <a href="mailto:dimeanalytics@worldbank.org">dimeanalytics@worldbank.org</a> alongside the submission of the working paper to the peer review process (currently organized by Dan Rogger):</p>
 <ol>
 <li>The working paper submission, including tables and figures<ul>
@@ -347,7 +422,7 @@
 </ul>
 </li>
 </ol>
-<p><strong>Review Requirements</strong></p>
+<h3 id="review-requirements">Review Requirements</h3>
 <p>We are happy to review code for both reproducibility and any other requests the team may have, given reasonable notice and time constraints. The best method is to share a Dropbox folder or GitHub repository with all the necessary code and documentation included. In either case, the shared folder should be freshly created specifically for the review. There are some basic reproducibility requirements we enforce before beginning detailed code review, so it is usually good for the programming team to verify the following before submitting:</p>
 <ol>
 <li>The “master” do-file is contained in the root directory of the shared folder and is the only do-file there;</li>
@@ -383,10 +458,10 @@
    }
 </code></pre>
 
-<p>The order of the outputted tables and figures should be obvious from the way they are named and organized. The Analytics Team will return to you a list of reproducibility issues if any occur, as well as general (major and minor) suggestions for code improvements and places where existing programs can save time and effort for your future work, just as in a peer review.</p>
-<p><strong>Public Release</strong></p>
-<p>Once this is complete, if you desire we will organize a public release repository on GitHub (<a href="https://github.com/worldbank/Water-When-It-Counts">such as this example</a>). This will contain all the files needed to reproduce the results, including a version of the datasets you provide, stripped to contain only the variables needed for analysis (using <a href="https://github.com/worldbank/stata/tree/master/src/exportCodebook">exportCodebook</a>). <em>Please let us know if any other data may not be publicly released so we can remove the appropriate materials from the repository!</em> We will share a private repository with you once it is created, and make it public once the working paper is released.</p>
-<p><strong>Peer Code Review</strong></p>
+<p>The order of the outputted tables and figures should be obvious from the way they are named and organized. The Analytics team will return to you a list of reproducibility issues if any occur, as well as general (major and minor) suggestions for code improvements and places where existing programs can save time and effort for your future work, just as in a peer review.</p>
+<h2 id="public-release">Public Release</h2>
+<p>Once this is complete, we can help to organize a public release repository on GitHub (<a href="https://github.com/worldbank/Water-When-It-Counts">such as this example</a>). Let us know if you would like to do this and we are happy to help you set this up. Many journals now require data and code to be made publicly available, and the World Bank GitHub is a great place for this.</p>
+<h2 id="peer-code-review">Peer Code Review</h2>
 <p>It is also possible to request a review of a Research Assistant or Field Coordinator's code during the development of a project. This is recommended when a project milestone is reached, such as
 - Handing over a project
 - Finishing code for sampling and/or randomization

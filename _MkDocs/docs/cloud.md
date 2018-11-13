@@ -13,3 +13,7 @@ RSudio Server is a powerful installation of R that lives in your browser and is 
 ## Cloud Storage and Computing
 
 DIME Analytics supports free access to cloud storage and computing resources via both Microsoft Azure and Amazon Web Services. These services create large, secure data storage locations in the cloud, as well as scalable computing resources for working with large datasets. Contact us to find out what is right for you.
+
+## Hadoop Cluster
+
+The Hadoop cluster is a powerful on-premises computing environment that can be used for just about anything. Let us know if you think you may need such a solution and we can provide access.

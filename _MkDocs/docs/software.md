@@ -2,6 +2,10 @@
 
 This section lists step-by-step installation instructions for various software DIME Analytics recommends. Please let us know if any part of the instructions is not clear or does not work for you and we will improve the instructions, or if you would like to see any other software included.
 
+## Dropbox
+
+DIME members are allowed to utilize Dropbox on personal and World Bank computers. Contact DIME Analytics to request an installation on a Bank machine, or start using your personal machine right away.
+
 ## Stata & R
 
 DIME has a Stata MP license for use on Bank and personal laptops. R is free, and we additionally have a powerful RStudio Server installation we can provide access to. Contact DIME Analytics for details.
@@ -14,9 +18,27 @@ DIME Analytics administers the [World Bank's enterprise subscription with Survey
 
 DIME projects are encouraged to use Git, a free [version control software](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668), for writing data analysis code. They allow simultaneous editing and execution of code files and comparisons of hisotries and alternate versions. This enables maintaining and merging simultaneous ongoing workstreams without conflicts, unlike software like Dropbox. [Learn more here.](https://worldbank.github.io/dimeanalytics/git/)
 
+## Our GitHub Repositories
+
+### ietoolkit
+
+[ietoolkit](https://worldbank.github.io/ietoolkit/) provides a set of commands that address different aspects of data management and data analysis in relation to [Impact Evaluations](http://blogs.worldbank.org/impactevaluations/ie-analytics-introducing-ietoolkit). The list of commands will be extended continuously, and suggestions for new commands are greatly appreciated. Some of the commands are related to standardized best practices developed at DIME (The World Bank’s unit for Impact Evaluations). For these commands, the corresponding help files provide justifications for the standardized best practices applied.
+
+### World Bank Stata GitHub
+
+The [World Bank Stata GitHub](https://worldbank.github.io/stata/) is an effort to debug, polish, improve, and disseminate useful reusable Stata code that is developed during the course of work. This repository is for such useful snippets – formalized as adofiles – which automate routine data management, statistical analysis, and graphing tasks such as data import and cleaning, production of summary statistics tables, and categorical bar charts with confidence intervals.
+
+### Stata IE Visual Library
+
+The [Stata IE Visual Library](https://worldbank.github.io/Stata-IE-Visual-Library/) is a repository maintained by DIME and containing example graphs on how to explore data sets and display results of Impact Evaluations using Stata.
+
+### LaTeX Templates Library
+
+The [LaTeX Templates Library](https://github.com/worldbank/DIME-LaTeX-Templates) contains resources that will help you make your research more reproducible. This will save you a substantial amount of time, significantly reduce the risk for human errors when exporting results to your papers, and make your research more transparent. We have prepared exercises that will make it easy for you to start using these resources.
+
 ## Atom
 
-Atom is a powerful text editor that has easy integrations with Git/GitHub and Stata, as well as other languages and softwares like LaTeX. It is built by the same team that produces GitHub, and is free. You can set it up on a personal computer with administration privileges. We are currently working on setup instructions for World Bank computers.
+Atom is a powerful free text editor that has easy integrations with Git/GitHub and Stata, as well as other languages and softwares like LaTeX and Markdown. You can set it up on a personal computer with administration privileges. We are currently working on setup instructions for World Bank computers.
 
 1. First install Atom from https://atom.io/. Choose any theme you like!
 1. In Atom, go to _Settings_ and then _Install_ and install the following two packages **language-stata** and **stata-exec**.
@@ -25,7 +47,7 @@ Atom is a powerful text editor that has easy integrations with Git/GitHub and St
     * _For Windows users_: It is a bit more complicated. You need to follow [these](https://github.com/kylebarron/stata-exec#installation) instructions. Ask for help if you don't understand something.
 1. Now open a Stata .do file in Atom and run it using the keyboard shortcuts in the **stata-exec** settings. The default keyboard shortcuts are slightly different than in the Stata dofile editor: `shift-cmd-d` (on Macs) and `shift-ctrl-d` (on PC) runs the whole file, and `cmd-alt-d` (on Macs) and `ctrl-alt-d` (on PC) runs only the selected code block. Let us know if you want to change these!
 
-_Useful Atom Packages_
+_Useful Atom Packages:_
 
 * [file-icons](https://atom.io/packages/file-icons): Adds icons to the project sidebar.
 * [fonts](https://atom.io/packages/fonts): Supports beautiful programming fonts like [atom-firacode](https://atom.io/packages/firacode).

@@ -1,4 +1,4 @@
-# DIME New Hire Onboarding Guide
+# New Hire Onboarding Guide
 
 Welcome to DIME! Please review and complete the following steps so that you can have a happy and successful time at DIME. If you have any questions, contact DIME Analytics: [dimeanalytics@worldbank.org](mailto:dimeanalytics@worldbank.org).
 
