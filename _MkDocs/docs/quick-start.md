@@ -8,9 +8,9 @@ Welcome to DIME! Please review and complete the following steps so that you can 
 
 ## Get a World Bank email account.
 
-​​Your supervisor should request an “email and computer logon” for you using eServices. Once this is issued, they will forward you the login. Log into a World Bank workstation, then open Outlook. Webmail can be accessed on a personal computer via the external World Bank Webmail site or Outlook using your logon token.
+​​Your supervisor should request an “email and computer logon” for you using eServices. Once this is issued, they will forward you the login. Log into a World Bank workstation, then open Outlook. Webmail can be accessed on a personal computer via the external [World Bank webmail](https://webmail.worldbank.org/).
 
-## Get an AzureID access token.
+## Get a logon token.
 
 ​​Visit GRAS (take the 400’s elevator to Ground Floor, then walk away from the lobby) and ask them for a token setup, after requesting in eServices. This enables you to log into Bank services from personal devices.
 
@@ -57,8 +57,8 @@ Welcome to DIME! Please review and complete the following steps so that you can 
 ## Join the DIME Slack Channel.
 ​​Visit <http://bit.ly/dimeslack> and ask for an invite if needed.
 
-## Review the technical onboarding:
-<https://showcase.dropbox.com/s/DIME-RA-Onboarding-Materials-VKuivyxUNY812HXofgr5t>
+## Review the onboarding and training materials:
+[Here.](https://showcase.dropbox.com/s/DIME-RA-Onboarding-Materials-VKuivyxUNY812HXofgr5t)
 
 ## Explore the HQ resources.
 ​​World Bank HQ has a vast selection of on-site resources for you, including a credit union (bank), gym, passport photos, business cards, mailing/shipping center, health clinic, and library.
@@ -67,9 +67,7 @@ Welcome to DIME! Please review and complete the following steps so that you can 
 ​​If you are expected to travel for business, the World Bank provides a special passport. Inquire with DIME Analytics for details if this is necessary. Make sure you do so well in advance of your travel dates.
 
 ## Get health insurance.
-​​The Bank-organized option for STCs is detailed below:
-​​
-DOCUMENT
+​​There is a Bank-organized health insurance option for STCs. Ask for more information.
 
 ## Printing at the World Bank
 ​​You can print from a Bank computer or a Citrix virtual machine from <http://myconnect.wbg.org>, or you can email your documents to wbgmobileprint@worldbank.org.

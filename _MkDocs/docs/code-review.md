@@ -1,6 +1,6 @@
 # Code Review
 
-**Pre-publication Code Review**
+## Pre-publication Code Review
 
 When you submit a working paper for internal review, DIME Analytics will support review and release of the reproduction data and code via the [World Bank GitHub](https://github.com/worldbank). The goal is to ensure that working papers by DIME are fully reproducible. To complete this review, please submit the following to [dimeanalytics@worldbank.org](mailto:dimeanalytics@worldbank.org) alongside the submission of the working paper to the peer review process (currently organized by Dan Rogger):
 
@@ -12,7 +12,7 @@ When you submit a working paper for internal review, DIME Analytics will support
     - All data required to produce the results
     - The TeX file that compiles the tables and figures (if applicable)
 
-**Review Requirements**
+### Review Requirements
 
 We are happy to review code for both reproducibility and any other requests the team may have, given reasonable notice and time constraints. The best method is to share a Dropbox folder or GitHub repository with all the necessary code and documentation included. In either case, the shared folder should be freshly created specifically for the review. There are some basic reproducibility requirements we enforce before beginning detailed code review, so it is usually good for the programming team to verify the following before submitting:
 
@@ -50,13 +50,13 @@ Once we verify that the code structure as a whole is fully reproducible in this 
        global projectfolder "/Users/bbdaniels/GitHub/dime-msie-track2-solutions/"
    }
 ```
-The order of the outputted tables and figures should be obvious from the way they are named and organized. The Analytics Team will return to you a list of reproducibility issues if any occur, as well as general (major and minor) suggestions for code improvements and places where existing programs can save time and effort for your future work, just as in a peer review.
+The order of the outputted tables and figures should be obvious from the way they are named and organized. The Analytics team will return to you a list of reproducibility issues if any occur, as well as general (major and minor) suggestions for code improvements and places where existing programs can save time and effort for your future work, just as in a peer review.
 
-**Public Release**
+## Public Release
 
-Once this is complete, if you desire we will organize a public release repository on GitHub ([such as this example](https://github.com/worldbank/Water-When-It-Counts)). This will contain all the files needed to reproduce the results, including a version of the datasets you provide, stripped to contain only the variables needed for analysis (using [exportCodebook](https://github.com/worldbank/stata/tree/master/src/exportCodebook)). *Please let us know if any other data may not be publicly released so we can remove the appropriate materials from the repository!* We will share a private repository with you once it is created, and make it public once the working paper is released.
+Once this is complete, we can help to organize a public release repository on GitHub ([such as this example](https://github.com/worldbank/Water-When-It-Counts)). Let us know if you would like to do this and we are happy to help you set this up. Many journals now require data and code to be made publicly available, and the World Bank GitHub is a great place for this.
 
-**Peer Code Review**
+## Peer Code Review
 
 It is also possible to request a review of a Research Assistant or Field Coordinator's code during the development of a project. This is recommended when a project milestone is reached, such as
 - Handing over a project

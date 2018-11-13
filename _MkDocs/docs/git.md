@@ -1,7 +1,20 @@
-# GitHub
+# Git and GitHub
 
-DIME-based projects are encouraged to use Git, a [version control](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668) software, for maintaining code projects. To support this, DIME team members can join the [World Bank GitHub group](https://github.com/worldbank/), and the desktop clients [GitHub Desktop](https://desktop.github.com) and [GitKraken (recommended)](https://www.gitkraken.com) are supported on World Bank computers. They allow simultaneous editing and execution of code files, including merging workstreams without conflicts, unlike Dropbox.
-Here's how to sign up:
+## Git
+
+DIME projects are encouraged to use Git, a free [version control software](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668), for writing data analysis code. They allow simultaneous editing and execution of code files and comparisons of hisotries and alternate versions. This enables maintaining and merging simultaneous ongoing workstreams without conflicts, unlike software like Dropbox.
+
+## Git Clients
+
+The desktop Git clients [GitHub Desktop](https://desktop.github.com) and [GitKraken (recommended)](https://www.gitkraken.com) are supported on World Bank computers. DIME Analytics offers occasional Git trainings as well as on-demand onboardings for teams and PIs and can help you get this software up and running.
+
+## GitHub
+
+GitHub is a web service that hosts a remote master copy of files you manage using Git. The World Bank has a subscription to this which you can join (see below). You can also create and manage your own remote Git repositories through [Microsoft Azure DevOps](http://devops.azure.com) without any approvals using your World Bank email to login.
+
+### World Bank GitHub Group
+
+DIME team members can join the [World Bank GitHub group](https://github.com/worldbank/) to have access to premium features. Here's how to sign up:
 
 **1. Create a GitHub account**
 
