@@ -1,0 +1,456 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+    
+    
+      
+        <title>Code Review - DIME Analytics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#code-review" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="DIME Analytics" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                DIME Analytics
+              </span>
+              <span class="md-header-nav__topic">
+                Code Review
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="DIME Analytics" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    DIME Analytics
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/" title="Cloud Computing" class="md-nav__link">
+      Cloud Computing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Code Review" class="md-nav__link md-nav__link--active">
+      Code Review
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../fc-training/" title="Fc training" class="md-nav__link">
+      Fc training
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../github/" title="GitHub" class="md-nav__link">
+      GitHub
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ra-training/" title="RA Training" class="md-nav__link">
+      RA Training
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../repos/" title="Our GitHub Repositories" class="md-nav__link">
+      Our GitHub Repositories
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../resources/" title="External Resources" class="md-nav__link">
+      External Resources
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../software/" title="Software" class="md-nav__link">
+      Software
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="code-review">Code Review</h1>
+<p><strong>Pre-publication Code Review</strong></p>
+<p>When you submit a working paper for internal review, DIME Analytics will support review and release of the reproduction data and code via the <a href="https://github.com/worldbank">World Bank GitHub</a>. The goal is to ensure that working papers by DIME are fully reproducible. To complete this review, please submit the following to <a href="mailto:dimeanalytics@worldbank.org">dimeanalytics@worldbank.org</a> alongside the submission of the working paper to the peer review process (currently organized by Dan Rogger):</p>
+<ol>
+<li>The working paper submission, including tables and figures<ul>
+<li>Filenames for tables and figures <strong>must</strong> correspond to the paper</li>
+</ul>
+</li>
+<li>The directory that reproduces the results exactly, including:<ul>
+<li>The master do-file, which we will run</li>
+<li>Dofiles required to produce result</li>
+<li>All data required to produce the results</li>
+<li>The TeX file that compiles the tables and figures (if applicable)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Review Requirements</strong></p>
+<p>We are happy to review code for both reproducibility and any other requests the team may have, given reasonable notice and time constraints. The best method is to share a Dropbox folder or GitHub repository with all the necessary code and documentation included. In either case, the shared folder should be freshly created specifically for the review. There are some basic reproducibility requirements we enforce before beginning detailed code review, so it is usually good for the programming team to verify the following before submitting:</p>
+<ol>
+<li>The “master” do-file is contained in the root directory of the shared folder and is the only do-file there;</li>
+<li>There is one line in the master do-file that needs to be adjusted to set the location of the root directory; and</li>
+<li>If this line and only this line is adjusted, then running the master do-file will correctly reproduce all materials from the project.</li>
+</ol>
+<p>Once we verify that the code structure as a whole is fully reproducible in this sense, we will go on to review the code itself in the order suggested by the master file and provide any general suggestions, or address any specific questions about the code that the submitting team may have. Let us know if you might need any other information to prepare a package for review. Once received, DIME Analytics will edit <em>only</em> that top-level directory global in the master do-file and run it to reproduce the results. This portion of the code should be marked out as illustrated below:</p>
+<pre><code>   * ******************************************************************** *
+   *
+   *       PART 1:  PREPARING FOLDER PATH GLOBALS
+   *
+   *           -Set the global box to point to the project folder
+   *            on each collaborators computer.
+   *           -Set other locals that point to other folders of interest.
+   *
+   * ******************************************************************** *
+
+   * Users
+   * -----------
+
+   *User Number:
+   * You                     1    //Replace &quot;You&quot; with your name
+   * Next User               2    //Assign a user number to each additional collaborator of this code
+
+   *Set this value to the user currently using this file
+   global user  1
+
+   * Root folder globals
+   * ---------------------
+
+   if $user == 1 {
+       global projectfolder &quot;/Users/bbdaniels/GitHub/dime-msie-track2-solutions/&quot;
+   }
+</code></pre>
+
+<p>The order of the outputted tables and figures should be obvious from the way they are named and organized. The Analytics Team will return to you a list of reproducibility issues if any occur, as well as general (major and minor) suggestions for code improvements and places where existing programs can save time and effort for your future work, just as in a peer review.</p>
+<p><strong>Public Release</strong></p>
+<p>Once this is complete, if you desire we will organize a public release repository on GitHub (<a href="https://github.com/worldbank/Water-When-It-Counts">such as this example</a>). This will contain all the files needed to reproduce the results, including a version of the datasets you provide, stripped to contain only the variables needed for analysis (using <a href="https://github.com/worldbank/stata/tree/master/src/exportCodebook">exportCodebook</a>). <em>Please let us know if any other data may not be publicly released so we can remove the appropriate materials from the repository!</em> We will share a private repository with you once it is created, and make it public once the working paper is released.</p>
+<p><strong>Peer Code Review</strong></p>
+<p>It is also possible to request a review of a Research Assistant or Field Coordinator's code during the development of a project. This is recommended when a project milestone is reached, such as
+- Handing over a project
+- Finishing code for sampling and/or randomization
+- Finishing the cleaning of a round of data collection
+- Finalizing data analysis for a paper or report
+- Preparing data for microdata catalog submission (more info on that in the <a href="https://dimewiki.worldbank.org/wiki/Microdata_Catalog">microdata catalog</a> and <a href="https://dimewiki.worldbank.org/wiki/Microdata_Catalog">microdata submission checklist</a> articles from the Wiki)</p>
+<p>The project review is conducted by another RA or FC, and people submitting their codes are also required to review a peer's code. The goals of this exercise are to (1) make sure all work is reproducible, (2) reduce coding mistakes, (3) encourage adoption of best practices, (4) create an opportunity to learn new coding skills from other people's codes.</p>
+<p>Project code review is currently being piloted but is expected to happen once a month. Participants will be asked to share their codes with the reviewer on a given date and will have a week to review their assigned project, following a guidelines provided by DIME Analytics.</p>
+<p><strong><a href="https://docs.google.com/forms/d/e/1FAIpQLScW1Holg5UjaA5F_kJ8Ga47eAV_zHE6JCGLot7DNOSraFMoFQ/viewform?usp=sf_link">Sign up a project for next round of code review</a></strong></p>
+<p><strong><a href="https://github.com/worldbank/DIMEwiki/wiki/How-does-it-work%3F">Code review instructions</a></strong></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../cloud/" title="Cloud Computing" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Cloud Computing
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../fc-training/" title="Fc training" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Fc training
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.5e60981f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
