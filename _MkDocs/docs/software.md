@@ -4,11 +4,11 @@ This section lists step-by-step installation instructions for various software D
 
 ## Dropbox
 
-DIME members are allowed to utilize Dropbox on personal and World Bank computers. Contact DIME Analytics to request an installation on a Bank machine, or start using your personal machine right away.
+DIME members are allowed to utilize [Dropbox](https://www.dropbox.com/h) on personal and World Bank computers. Contact DIME Analytics to request an installation on a Bank machine, or start using your personal machine right away.
 
 ## Stata & R
 
-DIME has a Stata MP license for use on Bank and personal laptops. R is free, and we additionally have a powerful RStudio Server installation we can provide access to. Contact DIME Analytics for details.
+DIME has a [Stata MP](https://www.stata.com) license for use on Bank and personal laptops. [R and RStudio](https://www.rstudio.com) are free, and we additionally have a powerful RStudio Server and Shiny installation we can provide access to. Contact DIME Analytics for details.
 
 ## SurveyCTO
 
@@ -16,7 +16,21 @@ DIME Analytics administers the [World Bank's enterprise subscription with Survey
 
 ## Git & GitHub
 
-DIME projects are encouraged to use Git, a free [version control software](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668), for writing data analysis code. They allow simultaneous editing and execution of code files and comparisons of hisotries and alternate versions. This enables maintaining and merging simultaneous ongoing workstreams without conflicts, unlike software like Dropbox. [Learn more here.](https://worldbank.github.io/dimeanalytics/git/)
+DIME projects are encouraged to use [Git](https://git-scm.com), a free [version control software](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668), for writing data analysis code. They allow simultaneous editing and execution of code files and comparisons of hisotries and alternate versions. This enables maintaining and merging simultaneous ongoing workstreams without conflicts, unlike software like Dropbox. [Learn more here.](https://worldbank.github.io/dimeanalytics/git/)
+
+## LaTeX
+
+[LaTeX](https://www.latex-project.org) is a text-based typesetting language. It can support full version control with Git, simultaneous online editing, or collaboration over Git/GitHub. [Overleaf](http://overleaf.com) is an online collaborative LaTeX editor that works much like Google Docs and includes a very useable rich-text editor. [TeXStudio](https://www.texstudio.org) is a desktop-based suite that works well with Git and is available for self-installation. Both allow the use of [BibTeX](http://www.bibtex.org) for reference management, which [pandoc](http://pandoc.org) can translate into correctly cited Microsoft Word documents (and much more!) using the [Citation Styles library](https://github.com/citation-style-language/styles):
+
+```
+pandoc -s -o main.docx main.tex --bibliography sample.bib --csl=/.../styles/the-lancet.csl
+```
+
+## Security and Data Encryption
+
+[LastPass](http://lastpass.com) is a free web app and software that manages your passwords. [Authy](https://itunes.apple.com/us/app/authy/id494168017?mt=8) is a software that enables two-factor authentication on your personal accounts. You should definitely use these both for all your personal and official data.
+
+[VeraCrypt](http://veracrypt.fr) is a free encryption software that creates and manages "virtual thumb drives" that are inaccessible without a password. It can be used on World Bank machines to store and transfer sensitive data.
 
 ## Our GitHub Repositories
 
@@ -38,9 +52,9 @@ The [LaTeX Templates Library](https://github.com/worldbank/DIME-LaTeX-Templates)
 
 ## Atom
 
-Atom is a powerful free text editor that has easy integrations with Git/GitHub and Stata, as well as other languages and softwares like LaTeX and Markdown. You can set it up on a personal computer with administration privileges. We are currently working on setup instructions for World Bank computers.
+[Atom](http://atom.io) is a powerful free text editor that has easy integrations with Git/GitHub and Stata, as well as other languages and softwares like LaTeX and Markdown. You can set it up on a personal computer with administration privileges. We are currently working on setup instructions for World Bank computers.
 
-1. First install Atom from https://atom.io/. Choose any theme you like!
+1. First install Atom from <https://atom.io/>. Choose any theme you like!
 1. In Atom, go to _Settings_ and then _Install_ and install the following two packages **language-stata** and **stata-exec**.
 1. In _Settings_ / _Packages_, open **stata-exec** and read the instructions carefully.
     * _For Mac users_: Selecting the correct Stata version should be the only step. Ask for help if you don't understand something.

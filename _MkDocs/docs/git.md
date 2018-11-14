@@ -10,7 +10,7 @@ The desktop Git clients [GitHub Desktop](https://desktop.github.com) and [GitKra
 
 ## GitHub
 
-GitHub is a web service that hosts a remote master copy of files you manage using Git. The World Bank has a subscription to this which you can join (see below). You can also create and manage your own remote Git repositories through [Microsoft Azure DevOps](http://devops.azure.com) without any approvals using your World Bank email to login.
+GitHub is a web service that hosts a remote master copy of files you manage using Git. The World Bank has a Team subscription to this which you can join (see below). You can also create and manage your own remote Git repositories through [Microsoft Azure DevOps](http://devops.azure.com) without any approvals using your World Bank email to login.
 
 ### World Bank GitHub Group
 
@@ -18,7 +18,7 @@ DIME team members can join the [World Bank GitHub group](https://github.com/worl
 
 **1. Create a GitHub account**
 
-- If you do not already have a GitHub account, open one at [this link](https://github.com/join?source=header-home). You don't need to use your World Bank e-mail and you can use an account you already have to become a member of this group.
+- If you do not already have a GitHub account, open one at [this link](https://github.com/join?source=header-home). We recommend you DON'T use your World Bank e-mail, as you may lose access to it, and you CAN use a personal account you already have to become a member of this group.
 
 **2. Join the World Bank GitHub group**
 
@@ -68,9 +68,3 @@ Manager's Name:
 - Repositories are private by default. If your repository will contain research code that is not ready to be shared with the world (e.g. data cleaning, exploratory analysis), you'll probably want to keep it that way.
 
 - If the content of the repository can be public, it's occasionally easier to create it using your personal account. However, if you are creating a repo to share commands, or templates, or apps created as part of your project, or the replication folder for a paper, you may want it to be linked to the World Bank group so people can find it without having to look for your username.
-
-**4. Cloning GitHub repos to your computer**
-
-- Click `Clone or download` on your repo's main page, then `Open in Desktop` and `Allow`. It's best practice to have your GitHub folder on your local computer, not in Dropbox, and sync changes using GitHub Desktop. If you insist on having this folder on Dropbox, please get in touch with the Data Coordinators to discuss the details on how to do it.
-
-- [This presentation](https://www.dropbox.com/s/4cq44p8aw64x6kq/3_Git_Repos.pdf?raw=1) gives full details on how to sync a Git repo for the first time.
