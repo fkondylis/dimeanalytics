@@ -307,6 +307,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#latex" title="LaTeX" class="md-nav__link">
+    LaTeX
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-and-data-encryption" title="Security and Data Encryption" class="md-nav__link">
+    Security and Data Encryption
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#our-github-repositories" title="Our GitHub Repositories" class="md-nav__link">
     Our GitHub Repositories
   </a>
@@ -426,6 +440,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#latex" title="LaTeX" class="md-nav__link">
+    LaTeX
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-and-data-encryption" title="Security and Data Encryption" class="md-nav__link">
+    Security and Data Encryption
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#our-github-repositories" title="Our GitHub Repositories" class="md-nav__link">
     Our GitHub Repositories
   </a>
@@ -493,13 +521,21 @@
                 <h1 id="software">Software</h1>
 <p>This section lists step-by-step installation instructions for various software DIME Analytics recommends. Please let us know if any part of the instructions is not clear or does not work for you and we will improve the instructions, or if you would like to see any other software included.</p>
 <h2 id="dropbox">Dropbox</h2>
-<p>DIME members are allowed to utilize Dropbox on personal and World Bank computers. Contact DIME Analytics to request an installation on a Bank machine, or start using your personal machine right away.</p>
+<p>DIME members are allowed to utilize <a href="https://www.dropbox.com/h">Dropbox</a> on personal and World Bank computers. Contact DIME Analytics to request an installation on a Bank machine, or start using your personal machine right away.</p>
 <h2 id="stata-r">Stata &amp; R</h2>
-<p>DIME has a Stata MP license for use on Bank and personal laptops. R is free, and we additionally have a powerful RStudio Server installation we can provide access to. Contact DIME Analytics for details.</p>
+<p>DIME has a <a href="https://www.stata.com">Stata MP</a> license for use on Bank and personal laptops. <a href="https://www.rstudio.com">R and RStudio</a> are free, and we additionally have a powerful RStudio Server and Shiny installation we can provide access to. Contact DIME Analytics for details.</p>
 <h2 id="surveycto">SurveyCTO</h2>
 <p>DIME Analytics administers the <a href="https://survey.wb.surveycto.com/">World Bank's enterprise subscription with SurveyCTO</a>. This installation is available to all Bank teams at a discount from the retail subscription and uses Bank single-sign-on when possible as well as allowing external email accounts. Please review the <a href="https://showcase.dropbox.com/s/WBG-SurveyCTO-Documentation-HZN82ovmFR0hpnnsLYdns">World Bank SurveyCTO Documentation</a> and use eServices to request a server. To be added to the DIME Team for survey template sharing, please contact DIME Analytics.</p>
 <h2 id="git-github">Git &amp; GitHub</h2>
-<p>DIME projects are encouraged to use Git, a free <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668">version control software</a>, for writing data analysis code. They allow simultaneous editing and execution of code files and comparisons of hisotries and alternate versions. This enables maintaining and merging simultaneous ongoing workstreams without conflicts, unlike software like Dropbox. <a href="https://worldbank.github.io/dimeanalytics/git/">Learn more here.</a></p>
+<p>DIME projects are encouraged to use <a href="https://git-scm.com">Git</a>, a free <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668">version control software</a>, for writing data analysis code. They allow simultaneous editing and execution of code files and comparisons of hisotries and alternate versions. This enables maintaining and merging simultaneous ongoing workstreams without conflicts, unlike software like Dropbox. <a href="https://worldbank.github.io/dimeanalytics/git/">Learn more here.</a></p>
+<h2 id="latex">LaTeX</h2>
+<p><a href="https://www.latex-project.org">LaTeX</a> is a text-based typesetting language. It can support full version control with Git, simultaneous online editing, or collaboration over Git/GitHub. <a href="http://overleaf.com">Overleaf</a> is an online collaborative LaTeX editor that works much like Google Docs and includes a very useable rich-text editor. <a href="https://www.texstudio.org">TeXStudio</a> is a desktop-based suite that works well with Git and is available for self-installation. Both allow the use of <a href="http://www.bibtex.org">BibTeX</a> for reference management, which <a href="http://pandoc.org">pandoc</a> can translate into correctly cited Microsoft Word documents (and much more!) using the <a href="https://github.com/citation-style-language/styles">Citation Styles library</a>:</p>
+<pre><code>pandoc -s -o main.docx main.tex --bibliography sample.bib --csl=/.../styles/the-lancet.csl
+</code></pre>
+
+<h2 id="security-and-data-encryption">Security and Data Encryption</h2>
+<p><a href="http://lastpass.com">LastPass</a> is a free web app and software that manages your passwords. <a href="https://itunes.apple.com/us/app/authy/id494168017?mt=8">Authy</a> is a software that enables two-factor authentication on your personal accounts. You should definitely use these both for all your personal and official data.</p>
+<p><a href="http://veracrypt.fr">VeraCrypt</a> is a free encryption software that creates and manages "virtual thumb drives" that are inaccessible without a password. It can be used on World Bank machines to store and transfer sensitive data.</p>
 <h2 id="our-github-repositories">Our GitHub Repositories</h2>
 <h3 id="ietoolkit">ietoolkit</h3>
 <p><a href="https://worldbank.github.io/ietoolkit/">ietoolkit</a> provides a set of commands that address different aspects of data management and data analysis in relation to <a href="http://blogs.worldbank.org/impactevaluations/ie-analytics-introducing-ietoolkit">Impact Evaluations</a>. The list of commands will be extended continuously, and suggestions for new commands are greatly appreciated. Some of the commands are related to standardized best practices developed at DIME (The World Bank’s unit for Impact Evaluations). For these commands, the corresponding help files provide justifications for the standardized best practices applied.</p>
@@ -510,9 +546,9 @@
 <h3 id="latex-templates-library">LaTeX Templates Library</h3>
 <p>The <a href="https://github.com/worldbank/DIME-LaTeX-Templates">LaTeX Templates Library</a> contains resources that will help you make your research more reproducible. This will save you a substantial amount of time, significantly reduce the risk for human errors when exporting results to your papers, and make your research more transparent. We have prepared exercises that will make it easy for you to start using these resources.</p>
 <h2 id="atom">Atom</h2>
-<p>Atom is a powerful free text editor that has easy integrations with Git/GitHub and Stata, as well as other languages and softwares like LaTeX and Markdown. You can set it up on a personal computer with administration privileges. We are currently working on setup instructions for World Bank computers.</p>
+<p><a href="http://atom.io">Atom</a> is a powerful free text editor that has easy integrations with Git/GitHub and Stata, as well as other languages and softwares like LaTeX and Markdown. You can set it up on a personal computer with administration privileges. We are currently working on setup instructions for World Bank computers.</p>
 <ol>
-<li>First install Atom from https://atom.io/. Choose any theme you like!</li>
+<li>First install Atom from <a href="https://atom.io/">https://atom.io/</a>. Choose any theme you like!</li>
 <li>In Atom, go to <em>Settings</em> and then <em>Install</em> and install the following two packages <strong>language-stata</strong> and <strong>stata-exec</strong>.</li>
 <li>In <em>Settings</em> / <em>Packages</em>, open <strong>stata-exec</strong> and read the instructions carefully.<ul>
 <li><em>For Mac users</em>: Selecting the correct Stata version should be the only step. Ask for help if you don't understand something.</li>
