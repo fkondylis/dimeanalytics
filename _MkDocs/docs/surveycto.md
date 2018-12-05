@@ -1,7 +1,5 @@
 # World Bank SurveyCTO
 
-## SurveyCTO World Bank Group Enterprise Server -  Quick Start Guide
-
 ## Introduction
 
 The World Bank Group’s SurveyCTO Enterprise server is an on-site installation of the SurveyCTO data collection platform, managed by DECIE’s DIME Analytics Group ([contact](mailto:dimeanalytics@worldbank.org)). To start a SurveyCTO survey, visit eServices and submit a request for “[SurveyCTO Data Collection Platform](https://worldbankgroup.service-now.com/wbg?id=wbg_sc_catalog&sys_id=7d1e71b86f16d340db112d232e3ee4aa)”. Requests are fulfilled within 1 business day. Each request becomes a group on the WBG SurveyCTO Enterprise server.
@@ -11,9 +9,9 @@ The cost is $99 per month per group. Each group is allowed up to 30 forms (i.e. 
 
 ## Access and Roles
 The Survey Administrator will be able to manage (add/delete) users, forms, and data for their group. New users can be added using the “Configure” tab. Each new user must be assigned a role, which will determine what access the user has to the server. The following standard roles are available for all groups:  
--	Form and Data Managers: can upload, move, and remove survey forms; can view and export data. Cannot manage users.
--	Data Managers: can view and export data. Cannot manage forms or users.
--	Enumerators: can view forms and submit questionnaires. Cannot manage users or forms, or access data.
+- Form and Data Managers: can upload, move, and remove survey forms; can view and export data. Cannot manage users.
+- Data Managers: can view and export data. Cannot manage forms or users.
+- Enumerators: can view forms and submit questionnaires. Cannot manage users or forms, or access data.
 Custom roles are available on request.
 
 ## Help and Customer Support
