@@ -8,10 +8,12 @@ The World Bank Group’s SurveyCTO Enterprise server is an on-site installation 
 The cost is $99 per month per group. Each group is allowed up to 30 forms (i.e. questionnaires), 10,000 mobile submissions, 10,000 web submissions, and 2GB of storage. In eServices, the requestor will designate a ‘Survey Administrator’ for their survey. This person must have a World Bank Group email address for authentication purposes. The Survey Administrator will receive an email as soon as their group is live on the server, at which point they will be able to log on and add all other team members and assign them the appropriate profile. The additional team members can be WBG staff and consultants or trusted external partners, who will then receive an invitation to the server. WBG users will be automatically authenticated; externals will be asked to create a password on their first visit.  
 
 ## Access and Roles
-The Survey Administrator will be able to manage (add/delete) users, forms, and data for their group. New users can be added using the “Configure” tab. Each new user must be assigned a role, which will determine what access the user has to the server. The following standard roles are available for all groups:  
+The Survey Administrator will be able to manage (add/delete) users, forms, and data for their group. New users can be added using the “Configure” tab. Each new user must be assigned a role, which will determine what access the user has to the server. The following standard roles are available for all groups:
+
 - Form and Data Managers: can upload, move, and remove survey forms; can view and export data. Cannot manage users.
 - Data Managers: can view and export data. Cannot manage forms or users.
 - Enumerators: can view forms and submit questionnaires. Cannot manage users or forms, or access data.
+
 Custom roles are available on request.
 
 ## Help and Customer Support
