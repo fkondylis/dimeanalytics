@@ -17,12 +17,15 @@ The Survey Administrator will be able to manage (add/delete) users, forms, and d
 Custom roles are available on request.
 
 ## Help and Customer Support
-Extensive documentation and resources are available through the “Help” menu on the server. DIME Analytics maintains WBG Enterprise SurveyCTO documentation here. Questions regarding the software itself (e.g. programming challenges, questions on particular features) should be addressed to SurveyCTO through the Support Center. Please make Support Center requests through the SurveyCTO server. Questions regarding the WBG Enterprise set-up specifically (start a new survey, request custom roles, etc) can be addressed to [dimeanalytics@worldbank.org](mailto:dimeanalytics@worldbank.org).
+Extensive documentation and resources are available through the “Help” menu on the server. You can download the WBG Enterprise SurveyCTO documentation [here](https://github.com/worldbank/dimeanalytics/archive/surveycto.zip). Questions regarding the software itself (e.g. programming challenges, questions on particular features) should be addressed to SurveyCTO through the Support Center. Please make Support Center requests through the SurveyCTO server. Questions regarding the WBG Enterprise set-up specifically (start a new survey, request custom roles, etc) can be addressed to [dimeanalytics@worldbank.org](mailto:dimeanalytics@worldbank.org).
 
-## Exporting data with SurveyCTO Sync
-The SurveyCTO Sync Desktop application can be installed on WBG computers by local IT. To request it, use the “[Software Installation Request](https://worldbankgroup.service-now.com/wbg?id=wbg_sc_catalog&sys_id=bd1e71b86f16d340db112d232e3ee4b7)” in eServices and select "SurveyCTO" in the Software Catalogue. Alternately, you can download the package directly [here].
+## Sync Client
 
-If you already have SurveyCTO Sync installed, you will simply need to replace the license file, which is available here. The license file needs to be placed in the “SurveyCTO Sync Storage” folder. By default, this folder usually ends up in Documents, but users may want to put it elsewhere. If you can't find it, open Sync, and then before trying to enter any passwords press "Tools" in the menubar, open Preferences, and you will be able to see where the storage folder is located. Once the file is located the folder, the user will drop the client.lic file into the folder and try to open Sync again. Then, the user will be able to close the pop-up without Sync closing.
+The SurveyCTO Sync Desktop application can be installed on WBG computers by local IT. To request it, use the “[Software Installation Request](https://worldbankgroup.service-now.com/wbg?id=wbg_sc_catalog&sys_id=bd1e71b86f16d340db112d232e3ee4b7)” in eServices and select ‘SurveyCTO’ in the Software Catalogue. You can also download the Sync client, license, and documentation [here](https://github.com/worldbank/dimeanalytics/archive/surveycto.zip).
+
+​Place [`SurveyCTO_Sync.exe`](https://github.com/worldbank/dimeanalytics/raw/surveycto/SurveyCTO_Sync.zip) into `C:/WBG/`, and then copy the `client.lic` file into the “SurveyCTO Sync Storage” folder if authentication fails. By default, this folder usually ends up in Documents, but users may want to put it elsewhere.
+
+If you can't find it, open Sync, and then before trying to enter any passwords press "Tools" in the menubar, open Preferences, and you will be able to see where the storage folder is located. Once the file is located the folder, the user will drop the `client.lic` file into the folder and try to open Sync again. Then, the user will be able to close the pop-up without Sync closing.
 
 ## Important Notes
 Because this is an enterprise installation, you are sharing server space with all other surveys. For the enterprise installation to work smoothly, please make sure to follow these rules; they will be enforced by administrators.
