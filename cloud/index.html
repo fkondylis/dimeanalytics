@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.1">
     
     
       
@@ -40,12 +40,12 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.982221ab.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.1f0bcf2b.js"></script>
     
     
       
@@ -55,6 +55,10 @@
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
     
     
   </head>
@@ -92,22 +96,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                DIME Analytics
-              </span>
-              <span class="md-header-nav__topic">
-                Cloud Resources
-              </span>
-            
+            <span class="md-header-nav__topic">
+              DIME Analytics
+            </span>
+            <span class="md-header-nav__topic">
+              Cloud Resources
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -130,7 +131,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -238,6 +238,33 @@
   <a href="#checklist-when-contacting-dime-analytics" title="Checklist when contacting DIME Analytics" class="md-nav__link">
     Checklist when contacting DIME Analytics
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uploading-and-storing-data-in-the-cloud" title="Uploading and storing data in the cloud:" class="md-nav__link">
+    Uploading and storing data in the cloud:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processing-data-in-the-cloud" title="Processing data in the cloud:" class="md-nav__link">
+    Processing data in the cloud:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-data-in-that-cloud" title="Accessing data in that cloud:" class="md-nav__link">
+    Accessing data in that cloud:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -401,6 +428,33 @@
     Checklist when contacting DIME Analytics
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uploading-and-storing-data-in-the-cloud" title="Uploading and storing data in the cloud:" class="md-nav__link">
+    Uploading and storing data in the cloud:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processing-data-in-the-cloud" title="Processing data in the cloud:" class="md-nav__link">
+    Processing data in the cloud:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-data-in-that-cloud" title="Accessing data in that cloud:" class="md-nav__link">
+    Accessing data in that cloud:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -432,27 +486,31 @@
 <p>The Hadoop cluster is a powerful on-premises computing environment that can be used for just about anything. Let us know if you think you may need such a solution and we can provide access.</p>
 <h2 id="checklist-when-contacting-dime-analytics">Checklist when contacting DIME Analytics</h2>
 <p>If you answer these questions to your best ability when you contact DIME Analytics on <a href="mailto:dimeanalytics@worldbank.org">dimeanalytics@worldbank.org</a>, we will be able to help you faster and better. If you do not know the answer then just say so.</p>
+<h4 id="uploading-and-storing-data-in-the-cloud">Uploading and storing data in the cloud:</h4>
+<p>If you will upload and/or store data in the cloud, then please answer these questions:</p>
 <ul>
-<li>Do you need to store data in your cloud resource? If yes:<ul>
-<li>Will you store the data as files or in a database? If database, do you have a preference for which data base?</li>
-<li>Roughly, how much data will you store? A few gigabytes? Hundreds of gigabytes? Several terabytes?</li>
-<li>Where does the data come from? For example, will you upload data from your computer? Or will the cloud resource access the data from an API? Or will a script in the cloud resource generate the data through, for example, web scraping?</li>
-<li>How will you use the data during the analysis? If you know, how will the data be accessed? And how frequently?</li>
+<li>Will you store the data as <em>files</em> or in a <em>database</em>? If database, do you have a preference for which database or which type of database?</li>
+<li>Roughly, how much data will you store? A few GBs? Hundreds of GBs? Several TBs?</li>
+<li>Where does the data come from?<ul>
+<li>Will you upload data from your computer?</li>
+<li>Will the cloud resource access the data from an API?</li>
+<li>Will a script in the cloud generate the data through, for example, web scraping?</li>
 </ul>
 </li>
-<li>Will you run scripts or code in your cloud resource? If yes:<ul>
+</ul>
+<h4 id="processing-data-in-the-cloud">Processing data in the cloud:</h4>
+<p>If you need to run any scripts in the cloud to, for example, analysis of data, generation of data (web scraping etc.), preparing the data (generating a sub-set or aggregated version of the data for easy download), then please answer these questions:</p>
+<ul>
 <li>Are you using a proprietary programming language like Stata, or non-proprietary like Python or R?</li>
-<li>Will you run anything that a laptop can not easily can run?  If yes:<ul>
-<li>What processing power will you need in terms of processor and RAM memory?</li>
+<li>How often does the script needs to run? What decides when it runs? Pre-set time intervals or user triggered?</li>
+<li>What processing power will you need in terms of processor and RAM memory? If you are running anything your laptop is powerful enough to run, then do not worry too much about this question.</li>
 </ul>
-</li>
-</ul>
-</li>
-<li>Does anyone but you need access to the cloud resource (generally, the cheapest options have stricter access requirements)? If yes:<ul>
-<li>Does anyone of them <em>not</em> have access to a World Bank computer?</li>
-<li>Is anyone of them not World Bank Staff/ETC/STC?</li>
-</ul>
-</li>
+<h4 id="accessing-data-in-that-cloud">Accessing data in that cloud:</h4>
+<p>If you are have data in the cloud that us not just back-up, then please answer these questions:</p>
+<ul>
+<li>How will this data be accessed? And how frequently?</li>
+<li>Does everyone in the research team need access to all data? For example, if you have a very large data file or data base, can an aggregated version of the data be generated that the research team access, or does the full research team need access to all levels of detail in the data?</li>
+<li>Does anyone that needs access to the data <em>not</em> have access to a World Bank computer? Is anyone of them not World Bank Staff/ETC/STC?</li>
 </ul>
                 
                   
@@ -517,20 +575,15 @@
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.5e60981f.js"></script>
+      <script src="../assets/javascripts/application.b806dc00.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-      
-    
-    
       
     
   </body>
