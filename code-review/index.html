@@ -227,9 +227,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#review-requirements" title="Review Requirements" class="md-nav__link">
-    Review Requirements
+  <a href="#code-review-requirements" title="Code Review Requirements" class="md-nav__link">
+    Code Review Requirements
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-review-requirements-checklist" title="Code Review Requirements Checklist" class="md-nav__link">
+    Code Review Requirements Checklist
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#computational-reproducibility-required" title="Computational Reproducibility (Required)" class="md-nav__link">
+    Computational Reproducibility (Required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ease-of-use-recommended" title="Ease of Use (Recommended)" class="md-nav__link">
+    Ease of Use (Recommended)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -376,9 +403,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#review-requirements" title="Review Requirements" class="md-nav__link">
-    Review Requirements
+  <a href="#code-review-requirements" title="Code Review Requirements" class="md-nav__link">
+    Code Review Requirements
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-review-requirements-checklist" title="Code Review Requirements Checklist" class="md-nav__link">
+    Code Review Requirements Checklist
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#computational-reproducibility-required" title="Computational Reproducibility (Required)" class="md-nav__link">
+    Computational Reproducibility (Required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ease-of-use-recommended" title="Ease of Use (Recommended)" class="md-nav__link">
+    Ease of Use (Recommended)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -434,7 +488,7 @@
 </ul>
 </li>
 </ol>
-<h3 id="review-requirements">Review Requirements</h3>
+<h3 id="code-review-requirements">Code Review Requirements</h3>
 <p>We are happy to review code for both reproducibility and any other requests the team may have, given reasonable notice and time constraints. The best method is to share a Dropbox folder or GitHub repository with all the necessary code and documentation included. In either case, the shared folder should be freshly created specifically for the review. There are some basic reproducibility requirements we enforce before beginning detailed code review, so it is usually good for the programming team to verify the following before submitting:</p>
 <ol>
 <li>The “master” do-file is contained in the root directory of the shared folder and is the only do-file there;</li>
@@ -471,6 +525,57 @@
 </code></pre>
 
 <p>The order of the outputted tables and figures should be obvious from the way they are named and organized. The Analytics team will return to you a list of reproducibility issues if any occur, as well as general (major and minor) suggestions for code improvements and places where existing programs can save time and effort for your future work, just as in a peer review.</p>
+<p>We recommend that you review and complete the following reproducibility checklist before submitting your code files for review. You are encouraged to submit the completed checklist as an exhibit or appendix to your working paper, since these materials directly attest to the transparency and credibility of your research project.</p>
+<p>The Analytics team will get back to you within two weeks of receiving the complete package. We will edit only the top-level directory global in the master do-file and run it to reproduce the results. We will make sure that your files run and that the raw outputs are re-created exactly as you supplied them; and if possible we will check them against the publication to confirm no transcription errors.</p>
+<p>For your review, we will return a list of specific replicability or execution errors if any occur, as well as general suggestions for code improvements and places where existing programs can save time and effort for your future work. We are happy to provide more specific suggestions to your team for improving the function and readability of the code if you have questions. If you wish, we can also help you organize a public release package.</p>
+<h3 id="code-review-requirements-checklist">Code Review Requirements Checklist</h3>
+<h4 id="computational-reproducibility-required">Computational Reproducibility (Required)</h4>
+<ul>
+<li>Provide a <code>.zip</code> file or GitHub link with the entire project directory. See https://github.com/worldbank/Water-When-It-Counts for an example of an organized directory structure. The folders should include:</li>
+<li>All necessary de-identified data for the analysis</li>
+<li>All code necessary for the analysis</li>
+<li>The raw outputs you have used for the paper</li>
+<li>
+<p>Using <code>iefolder</code> from our <code>ietoolkit</code> can help standardize this in Stata.</p>
+</li>
+<li>
+<p>In either the <code>/dofiles/</code> folder or in the root directory, include a master script (dofile or Rscript for example). The master script should allow the reviewer to change one line of code setting the directory path. Then, running the master script should run the entire project and re-create all the raw outputs exactly as supplied.</p>
+<ul>
+<li>Indicate the filename and line to change in your submission email.</li>
+<li>Using <code>iefolder</code> from our <code>ietoolkit</code> can help set this up.</li>
+</ul>
+</li>
+<li>
+<p>Check that all your code will run completely on a new computer. This means</p>
+</li>
+<li>install any required user-written commands in the master script (for example, in Stata using <code>ssc install</code> or <code>net install</code> and in R include code for installing packages, including installing the appropriate version of the package if necessary),</li>
+<li>Make sure critical settings like <code>version</code>, <code>matsize</code>, and <code>varabbrev</code> are set correctly.</li>
+<li>
+<p>The master file should indicate the settings of these needed to run, or use a wrapper command like <code>ieboilstart</code> from <code>ietoolkit</code></p>
+</li>
+<li>
+<p>All outputs should clearly correspond by name to an exhibit in the paper, and vice versa.</p>
+</li>
+<li>Code and outputs which are not used should be removed.</li>
+<li>Supplying a compiling TeX document can support this.</li>
+<li>
+<p>The submission package should include these outputs in the location they are produced.</p>
+</li>
+<li>
+<p>Let us know: Approximately how long does the code take to run (ie, minutes, hours, or days)?</p>
+</li>
+</ul>
+<h4 id="ease-of-use-recommended">Ease of Use (Recommended)</h4>
+<ul>
+<li>Analysis scripts should not include any data cleaning or variable creation, unless technically necessary for the creation of a table or graphic (eg, the <code>separate</code> command in Stata).</li>
+<li>Data cleaning of raw variables should not be included in the analysis package at all.</li>
+<li>Variable creation for derived or constructed measures should be included in a separate script with detailed code comments about each new variable that is generated.</li>
+<li>Analysis scripts should be completely modular. The section for each exhibit should begin with a fresh environment (<code>use</code> or <code>clear</code> in Stata, or start a fresh R session). This can also be accomplished by having a separate scripts for each exhibit.</li>
+<li>Analysis code should be well-commented and indented, such that the reader can easily identify functional chunks of code and evaluate whether they correctly implement the econometric or statistical process described. The reader should not have to figure out the process by reading the code.</li>
+<li>Graphics should be output as <code>.eps</code> files when possible.</li>
+<li>Tables should be output as <code>.csv</code> or <code>.tex</code> files when possible.</li>
+<li>In-text numerical citations that are not drawn directly from tables and figures should be computed and recorded in a separate file, such as a dynamic document format like <code>.stmd</code> using <code>markstat</code> in Stata or <code>.rmd</code> using R.</li>
+</ul>
 <h2 id="public-release">Public Release</h2>
 <p>Once this is complete, we can help to organize a public release repository on GitHub (<a href="https://github.com/worldbank/Water-When-It-Counts">such as this example</a>). Let us know if you would like to do this and we are happy to help you set this up. Many journals now require data and code to be made publicly available, and the World Bank GitHub is a great place for this.</p>
 <h2 id="peer-code-review">Peer Code Review</h2>
