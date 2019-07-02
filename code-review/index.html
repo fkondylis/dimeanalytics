@@ -227,13 +227,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#code-review-requirements" title="Code Review Requirements" class="md-nav__link">
-    Code Review Requirements
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#code-review-checklist" title="Code Review Checklist" class="md-nav__link">
     Code Review Checklist
   </a>
@@ -257,6 +250,13 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-review-process" title="Code Review Process" class="md-nav__link">
+    Code Review Process
+  </a>
   
 </li>
         
@@ -403,13 +403,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#code-review-requirements" title="Code Review Requirements" class="md-nav__link">
-    Code Review Requirements
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#code-review-checklist" title="Code Review Checklist" class="md-nav__link">
     Code Review Checklist
   </a>
@@ -433,6 +426,13 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-review-process" title="Code Review Process" class="md-nav__link">
+    Code Review Process
+  </a>
   
 </li>
         
@@ -474,7 +474,7 @@
                 
                 <h1 id="code-review">Code Review</h1>
 <h2 id="pre-publication-code-review">Pre-publication Code Review</h2>
-<p>When you submit a working paper for internal review, DIME Analytics will support review and release of the reproduction data and code via the <a href="https://github.com/worldbank">World Bank GitHub</a>. The goal is to ensure that working papers by DIME are fully reproducible. To complete this review, please submit the following to <a href="mailto:dimeanalytics@worldbank.org">dimeanalytics@worldbank.org</a> alongside the submission of the working paper to the peer review process (currently organized by Dan Rogger):</p>
+<p>When you submit a working paper for internal review, DIME Analytics will support review and release of the reproduction data and code via the <a href="https://github.com/worldbank">World Bank GitHub</a>. The goal is to ensure that working papers by DIME are fully reproducible. To complete this review, please <a href="https://www.dropbox.com/s/a98fur2ao0ui813/DIME%20Analytics%20Code%20Review%20Checklist.pdf?raw=1">complete the Code Review Checklist</a> and submit it and the following materials to <a href="mailto:dimeanalytics@worldbank.org">dimeanalytics@worldbank.org</a> alongside the submission of the working paper to the peer review process (currently organized by Dan Rogger):</p>
 <ol>
 <li>The working paper submission, including tables and figures<ul>
 <li>Filenames for tables and figures <strong>must</strong> correspond to the paper</li>
@@ -488,55 +488,17 @@
 </ul>
 </li>
 </ol>
-<h3 id="code-review-requirements">Code Review Requirements</h3>
-<p>We are happy to review code for both reproducibility and any other requests the team may have, given reasonable notice and time constraints. The best method is to share a Dropbox folder or GitHub repository with all the necessary code and documentation included. In either case, the shared folder should be freshly created specifically for the review. There are some basic reproducibility requirements we enforce before beginning detailed code review, so it is usually good for the programming team to verify the following before submitting:</p>
-<ol>
-<li>The “master” do-file is contained in the root directory of the shared folder and is the only do-file there;</li>
-<li>There is one line in the master do-file that needs to be adjusted to set the location of the root directory; and</li>
-<li>If this line and only this line is adjusted, then running the master do-file will correctly reproduce all materials from the project.</li>
-</ol>
-<p>Once we verify that the code structure as a whole is fully reproducible in this sense, we will go on to review the code itself in the order suggested by the master file and provide any general suggestions, or address any specific questions about the code that the submitting team may have. Let us know if you might need any other information to prepare a package for review. Once received, DIME Analytics will edit <em>only</em> that top-level directory global in the master do-file and run it to reproduce the results. This portion of the code should be marked out as illustrated below:</p>
-<pre><code>   * ******************************************************************** *
-   *
-   *       PART 1:  PREPARING FOLDER PATH GLOBALS
-   *
-   *           -Set the global box to point to the project folder
-   *            on each collaborators computer.
-   *           -Set other locals that point to other folders of interest.
-   *
-   * ******************************************************************** *
-
-   * Users
-   * -----------
-
-   *User Number:
-   * You                     1    //Replace &quot;You&quot; with your name
-   * Next User               2    //Assign a user number to each additional collaborator of this code
-
-   *Set this value to the user currently using this file
-   global user  1
-
-   * Root folder globals
-   * ---------------------
-
-   if $user == 1 {
-       global projectfolder &quot;/Users/bbdaniels/GitHub/dime-msie-track2-solutions/&quot;
-   }
-</code></pre>
-
-<p>The order of the outputted tables and figures should be obvious from the way they are named and organized. The Analytics team will return to you a list of reproducibility issues if any occur, as well as general (major and minor) suggestions for code improvements and places where existing programs can save time and effort for your future work, just as in a peer review.</p>
-<p>We recommend that you review and complete the following reproducibility checklist before submitting your code files for review. You are encouraged to submit the completed checklist as an exhibit or appendix to your working paper, since these materials directly attest to the transparency and credibility of your research project.</p>
-<p>The Analytics team will get back to you within two weeks of receiving the complete package. We will edit only the top-level directory global in the master do-file and run it to reproduce the results. We will make sure that your files run and that the raw outputs are re-created exactly as you supplied them; and if possible we will check them against the publication to confirm no transcription errors.</p>
-<p>For your review, we will return a list of specific replicability or execution errors if any occur, as well as general suggestions for code improvements and places where existing programs can save time and effort for your future work. We are happy to provide more specific suggestions to your team for improving the function and readability of the code if you have questions. If you wish, we can also help you organize a public release package.</p>
 <h3 id="code-review-checklist">Code Review Checklist</h3>
 <h4 id="computational-reproducibility-required">Computational Reproducibility (Required)</h4>
 <ul>
 <li>
-<p>Provide a <code>.zip</code> file or GitHub link with the entire project directory. See <a href="https://github.com/worldbank/Water-When-It-Counts">https://github.com/worldbank/Water-When-It-Counts</a> for an example of an organized directory structure. The folders should include:</p>
+<p>Provide a <code>.zip</code> file or GitHub link with the entire project directory. See <a href="https://github.com/worldbank/Water-When-It-Counts">this project</a> for an example of an organized directory structure. The folders should include:</p>
 <ul>
 <li>All necessary de-identified data for the analysis</li>
 <li>All code necessary for the analysis</li>
 <li>The raw outputs you have used for the paper</li>
+<li><strong>No extraneous documentation or PII data you would not share publicly</strong></li>
+<li><strong>No outputs or datasets that are not used in the analysis</strong></li>
 <li>Using <code>iefolder</code> from our <code>ietoolkit</code> can help standardize this in Stata.</li>
 </ul>
 </li>
@@ -578,6 +540,46 @@
 <li>Tables should be output as <code>.csv</code> or <code>.tex</code> files when possible.</li>
 <li>In-text numerical citations that are not drawn directly from tables and figures should be computed and recorded in a separate file, such as a dynamic document format like <code>.stmd</code> using <code>markstat</code> in Stata or <code>.rmd</code> using R.</li>
 </ul>
+<h3 id="code-review-process">Code Review Process</h3>
+<p>We are happy to review code for both reproducibility and any other requests the team may have, given reasonable notice and time constraints. The review folder should be freshly created specifically for the review. There are some basic reproducibility requirements we enforce before beginning detailed code review, so it is usually good for the programming team to verify the following before submitting:</p>
+<ol>
+<li>The “master” do-file is contained in the root directory of the shared folder and is the only do-file there;</li>
+<li>There is one line in the master do-file that needs to be adjusted to set the location of the root directory; and</li>
+<li>If this line and only this line is adjusted, then running the master do-file will correctly reproduce all materials from the project.</li>
+</ol>
+<p>Once we verify that the code structure as a whole is fully reproducible in this sense, we will go on to review the code itself in the order suggested by the master file and provide any general suggestions, or address any specific questions about the code that the submitting team may have. Let us know if you might need any other information to prepare a package for review. Once received, DIME Analytics will edit <em>only</em> that top-level directory global in the master do-file and run it to reproduce the results. This portion of the code should be marked out as illustrated below:</p>
+<pre><code>   * ******************************************************************** *
+   *
+   *       PART 1:  PREPARING FOLDER PATH GLOBALS
+   *
+   *           -Set the global box to point to the project folder
+   *            on each collaborators computer.
+   *           -Set other locals that point to other folders of interest.
+   *
+   * ******************************************************************** *
+
+   * Users
+   * -----------
+
+   *User Number:
+   * You                     1    //Replace &quot;You&quot; with your name
+   * Next User               2    //Assign a user number to each additional collaborator of this code
+
+   *Set this value to the user currently using this file
+   global user  1
+
+   * Root folder globals
+   * ---------------------
+
+   if $user == 1 {
+       global projectfolder &quot;/Users/bbdaniels/GitHub/dime-msie-track2-solutions/&quot;
+   }
+</code></pre>
+
+<p>The order of the outputted tables and figures should be obvious from the way they are named and organized. The Analytics team will return to you a list of reproducibility issues if any occur, as well as general (major and minor) suggestions for code improvements and places where existing programs can save time and effort for your future work, just as in a peer review.</p>
+<p>We recommend that you review and complete the following reproducibility checklist before submitting your code files for review. You are encouraged to submit the completed checklist as an exhibit or appendix to your working paper, since these materials directly attest to the transparency and credibility of your research project.</p>
+<p>The Analytics team will get back to you within two weeks of receiving the complete package. We will edit only the top-level directory global in the master do-file and run it to reproduce the results. We will make sure that your files run and that the raw outputs are re-created exactly as you supplied them; and if possible we will check them against the publication to confirm no transcription errors.</p>
+<p>For your review, we will return a list of specific replicability or execution errors if any occur, as well as general suggestions for code improvements and places where existing programs can save time and effort for your future work. We are happy to provide more specific suggestions to your team for improving the function and readability of the code if you have questions. If you wish, we can also help you organize a public release package.</p>
 <h2 id="public-release">Public Release</h2>
 <p>Once this is complete, we can help to organize a public release repository on GitHub (<a href="https://github.com/worldbank/Water-When-It-Counts">such as this example</a>). Let us know if you would like to do this and we are happy to help you set this up. Many journals now require data and code to be made publicly available, and the World Bank GitHub is a great place for this.</p>
 <h2 id="peer-code-review">Peer Code Review</h2>
