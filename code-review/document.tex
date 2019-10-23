@@ -1,0 +1,269 @@
+\documentclass{tufte-handout}
+
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage[export]{adjustbox}
+\usepackage{setspace}
+\usepackage{xcolor}
+
+% 
+\usepackage{booktabs}
+% For merged cells
+\usepackage{multirow}	
+\usepackage{array}
+
+\usepackage{librecaslon}
+
+
+\title{Pre-Publication Code Review Checklist}
+\date{}
+
+% Set header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\includegraphics[height=1.3cm,keepaspectratio]{../img/i2i}}
+\cfoot{\includegraphics[height=1.3cm,keepaspectratio]{../img/wb}}
+\rfoot{\includegraphics[height=1.3cm,keepaspectratio]{../img/analytics}}
+
+% Put checkbox to the left of the text
+\def\LayoutCheckField#1#2{% label, field
+	#2 #1%
+}
+
+% Line spacing
+\onehalfspacing
+
+% Define DIME Analytics visual identity colors
+\definecolor{fontcolor}{HTML}{7A0569}
+
+\titleformat{\section}%
+{\Large\rmfamily\bf\color{fontcolor}}% format applied to label+text
+{\llap{\colorbox{fontcolor}{\parbox{1.5cm}{\hfill\huge\color{fontcolor}\thesection}}}}% label
+{2pt}% horizontal separation between label and title body
+{}% before the title body
+[]% after the title body
+
+% ------------------------------ End of preamble ---------------------------------------------
+\begin{document}
+	\begin{fullwidth}
+		
+	\maketitle
+	
+	% Please add the following required packages to your document preamble:
+	
+	\begin{table}[h!]
+		\singlespacing
+		\begin{tabular}{|>{          \arraybackslash} m{3.5cm} 
+				 	    |>{\centering\arraybackslash} m{2.5cm} 
+			 	        |>{\centering\arraybackslash} m{3.3cm}
+		 	            |>{          \arraybackslash} m{6cm}|}
+		% Title
+			\multicolumn{4}{c}{\textbf{\large{\textcolor{fontcolor}{TOP Guidelines Compliance at DIME}}} (https://cos.io/top/)} \\  
+			\multicolumn{4}{c}{}\\ \hline
+		% Header
+			  \hspace{.8cm}\textbf{Category}
+			& \vspace{2mm}\textbf{Required TOP Level}\vspace{1mm}
+			& \vspace{2mm}\textbf{DIME Suggested Approach}\vspace{1mm}
+			& \hspace{1.3cm}{\textbf{Implementation}} \\ \hline
+		% ------	
+			  Citation Standards	
+			& \small{Level III}
+			& \vspace{2mm}{\small Harvard Dataverse Style}\vspace{1mm}
+			& \vspace{2mm}{\small Article must include formal citations for data and documentation.}\vspace{1mm}	\\ \hline	
+		% ------	
+			  \vspace{3mm}Data Transparency\vspace{3mm}
+			& \vspace{3mm}\small{Level III}\vspace{3mm}
+			& \vspace{.4cm}\multirow{2}{\hsize}{\small{Microdata Catalog (instructions)}}
+			& \multirow{2}{\hsize}{\small Data, code, and documentation (such as survey instruments) must be posted to a trusted repository (which can be private or embargoed.)}  \\ \cline{1-2}
+		% ------
+			  \vspace{3mm}{Documentation}\vspace{2mm}
+			& \small{Level III}
+			& 
+			&  \\ \cline{1-3}
+		% ------
+			  Code Transparency
+			& \small{Level III}
+			& \small{GitHub Repository}
+			& \small{Reported analyses will be reproduced independently prior to publication.}\vspace{1mm} \\ \hline
+		%
+			  Design Transparency
+			& \small{Level II}
+			& \multirow{3}{\hsize}{{\small{AEA, RIDIE, or other registry, in combination with GitHub Issues or other transparent record-keeping of decisions taken during project and analysis. (AEA policy)}}}
+			& \vspace{2mm}{\small{Experimental design, including sampling and randomization, must be fully described. Analytical choices (statistical model, covariates, etc.) must be documented.}}\vspace{1mm} \\ \cline{1-2}
+		% ------
+			  Study Preregistration
+			& \small{Level II}
+			& 
+			& \vspace{2mm}{\small{State whether the study is preregistered, and, if so, allow access during peer review.}}\vspace{1mm} \\ \cline{1-2} 
+		% ------
+			  Pre-Analysis  Plan
+			& \small{Level II}
+			& 
+			& \vspace{2mm}\small{State whether a pre-analysis plan was registered, and, if so, allow access during peer review.}\vspace{1mm} \\ \hline
+		% ------
+			  Replication
+			& \vspace{2mm}\small{Level III {(replication studies only)\vspace{1mm}}}
+			& \small{JDE Registered Reports or other}
+			& \vspace{2mm}{\small Registered Reports for replication studies with peer review before observing outcomes can be submitted.}\vspace{1mm} \\ \hline
+		\end{tabular}
+	\end{table}
+		
+	\newpage
+	\section*{Part 1: Computational Reproducibility}
+	
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm]{Entire project directory provided as a .zip file or GitHub link \textbf{(required)}}
+		\end{Form}
+			
+		
+		\vspace{.3cm}
+		\noindent \textbf{The directory includes:}
+		
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ All necessary data for the analysis. \textbf{(required)}}
+		\end{Form}
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ All code necessary for the analysis. \textbf{(required)}}
+		\end{Form}
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ The raw outputs used for the paper (e.g. tables and figures). \textbf{(required)}}
+		\end{Form}
+		
+		\begin{Form} 	
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ Fully de-identified data. \textbf{(required without pre-agreed exception)}}
+		\end{Form}
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ No documentation, code, outputs or datasets not used in the paper.}
+		\end{Form}
+		
+		
+		\vspace{.3cm}
+		\noindent \textbf{Master script:}
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm]{ The master script (e.g. .do file, R script) runs the entire project when executed. \textbf{(required)}}
+		\end{Form}
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ Is located in the root directory.}
+		\end{Form}
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ Runs if reviewer changes only directory path(s) in one location of the master script. \textbf{(required)}}
+		\end{Form}
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ Re-creates all raw outputs exactly as they appear in the paper. \textbf{(required)}}
+		\end{Form}
+		
+		\vspace{.2cm}
+		\noindent Indicate the master script filename and line number where directory path/paths should be changed: \\
+		\TextField[height=0.4cm, width = 13cm]{File name:} \\ 
+		\TextField[height=0.4cm, width = 13cm]{Line:\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,}
+		
+		\vspace{.4cm}
+		\noindent \textbf{Reproducibility:}
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ All code runs completely on a new computer. \textbf{(required)}}
+		\end{Form}
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ Any required user-written commands are installed as part of the master script (e.g. using ssc install, net install or R code for installing packages). The appropriate version of the package is installed when versioning affects the results or the code.}
+		\end{Form}
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ Critical settings like version, matsize, and varabbrev are specified. The master file either sets these directly or uses a wrapper command (e.g. ieboilstart from ietoolkit).}
+		\end{Form}
+		
+		\vspace{.3cm}
+		\noindent \textbf{Outputs (tables and graphs):}
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ All outputs are reproduced exactly as they appear in the paper. (See AEA policy) \textbf{(required)}}
+		\end{Form}
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ Each output clearly corresponds by name to an exhibit in the paper, and vice versa (supplying a compiling TeX document can support this). \textbf{(required)}}
+		\end{Form}
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ The outputs are produced in the same folder structure that is saved in the submission package.}
+		\end{Form}
+		
+		\begin{Form}
+			\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ The submission package includes code to create all in-text numerical citations that are not drawn directly from tables and figures.}
+		\end{Form}
+		
+		\vspace{.2cm}
+		\noindent Approximately how long does the code take to run (i.e., minutes, hours, or days)? \noindent \TextField[height=0.4cm, width = 3cm]{} \\ 
+	
+	
+	\section*{Part 2: Repository Access Information}
+	
+		\begin{tabular}{lc}
+		\TextField[width = 9.1cm]{Microdata Catalog entry:} & \CheckBox[width=0.4cm, bordercolor=gray]{ Public} \\
+		\TextField[width = 10.1cm]{GitHub repository:} 		& \CheckBox[width=0.4cm, bordercolor=gray]{ Public} \\
+		\TextField[width = 10.5cm]{Pre-registration:} 		& \CheckBox[width=0.4cm, bordercolor=gray]{ Public} \\
+		\TextField[width = 10.3cm]{Pre-analysis plan:} 		& \CheckBox[width=0.4cm, bordercolor=gray]{ Public} \\
+		\TextField[width = 9.55cm]{Other documentation:}	& \CheckBox[width=0.4cm, bordercolor=gray]{ Public} \\
+		\end{tabular}
+	
+	
+	\section*{Part 3: Ease of Use}
+	
+		These practices are recommended but not required. This paper incorporates those indicated below:
+		\vspace{.3cm}
+		
+		\noindent
+		\begin{Form}
+		\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ Scripts for data cleaning, variable creation, and analysis are separate}
+		\end{Form}
+		
+		\noindent
+		\begin{Form}
+		\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ Variable creation for derived or constructed measures is done in separate scripts from data analysis and includes detailed code comments about each new variable that is generated.}
+		\end{Form}
+		
+		\noindent
+		\begin{Form}
+		\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ Analysis scripts do not include any data cleaning or variable creation, unless necessary for the creation of a table or graphic.}
+		\end{Form}
+		
+		\noindent
+		\begin{Form}
+		\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ Analysis scripts are completely modular: they do not depend on having the results of other script in memory, unless that other script is the Master script. Each script starts by loading all necessary data.}
+		\end{Form}
+		
+		\noindent
+		\begin{Form}
+		\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ Separate scripts are provided for each exhibit.}
+		\end{Form}
+		
+		\noindent
+		\begin{Form}
+		\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ All code is well-commented and formatted, such that one can easily identify functional chunks of code and evaluate whether they correctly implement the econometric or statistical process described.}
+		\end{Form}
+		
+		\noindent
+		\begin{Form}
+		\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ Graphics are output as .eps files or other vector images when possible.}
+		\end{Form}
+		
+		\noindent
+		\begin{Form}
+		\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ Tables are output as .csv or .tex files or other raw text files when possible.}
+		\end{Form}
+		
+		\noindent
+		\begin{Form}
+		\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{ In-text numerical citations (other than those drawn directly from tables and figures) are computed and recorded in a dynamic document format like .ipynb, .stmd using markstat in Stata, or .Rmd using R.}
+		\end{Form}
+	
+	\end{fullwidth}
+\end{document}
